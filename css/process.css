@@ -1,0 +1,44 @@
+/*process page*/
+.header-inner-1 img {
+  padding-left: 0;
+  max-width: 647px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.main-inner-center h3 {
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--light-color);
+  text-align: center;
+  padding-top: 50px;
+  background: var(--fros-green-color);
+}
+.main-inner-left img {
+  max-width: 400px;
+  padding-left: 50px;
+}
+.para-num {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 400px;
+}
+.para-num span {
+  font-size: 8rem;
+  color: var(--fros-main-color);
+}
+.para-num2 span {
+  font-size: 8rem;
+  color: var(--fros-main-color);
+}
+.para-num2 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 200px;
+  text-align: right;
+}
