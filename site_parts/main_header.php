@@ -1,7 +1,7 @@
-<nav class="navbar bg-green">
+<nav class="navbar bg-green nav-sub">
     <div class="container flex">
         <a href="index.html" class="navbar-brand">
-            <img src="images/logo.png" alt="site logo" />
+            <img style="width: 80px;" src="images/_logo_.png" alt="site logo" />
         </a>
         <button type="button" class="navbar-show-btn">
             <img src="images/ham-menu-icon.png" />
@@ -29,14 +29,7 @@
                 </li>
             </ul>
             <div class="search-bar">
-                <form>
-                    <div class="search-bar-box flex">
-                        <span class="search-icon flex">
-                            <img src="images/search-icon-dark.png" />
-                        </span>
-                        <input type="search" class="search-control" placeholder="Search here" />
-                    </div>
-                </form>
+
             </div>
         </div>
     </div>

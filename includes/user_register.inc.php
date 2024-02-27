@@ -1,6 +1,6 @@
 <?php
 $json_path = "../config/credentials.json";
-require "./db.php";
+require "../db.php";
 require "functions.inc.php";
 
 if (isset($_POST["user_submission"]))
@@ -26,9 +26,11 @@ if (isset($_POST["user_submission"]))
     $med_allergy = $_POST["med-allergy"];
     $med_surgery = $_POST["med-surgery"];
     $med_chronic = $_POST["med-chronic"];
+    $password = $_POST["password"];
+    $password_rep = $_POST["password_rep"];
 
-    $data = [$full_name, $first_name, $last_name, $gender, $dob, $nic, $blood, $address_l1, $address_l2, $district,$phone, $email, $emg_name, $rel_name, $emg_phone , $emg_address_l1, $emg_address_l2, $emg_district, $med_allergy, $med_surgery, $med_chronic];
-    $req_data = [$full_name, $first_name, $last_name, $gender, $dob, $nic, $blood, $address_l1, $address_l2, $district,$phone, $email, $emg_name, $rel_name, $emg_phone , $emg_address_l1, $emg_address_l2, $emg_district];
+    $data = [$full_name, $first_name, $last_name, $gender, $dob, $nic, $blood, $address_l1, $address_l2, $district,$phone, $email, $emg_name, $rel_name, $emg_phone , $emg_address_l1, $emg_address_l2, $emg_district, $med_allergy, $med_surgery, $med_chronic, $password, $password_rep];
+    $req_data = [$full_name, $first_name, $last_name, $gender, $dob, $nic, $blood, $address_l1, $address_l2, $district,$phone, $email, $emg_name, $rel_name, $emg_phone , $emg_address_l1, $emg_address_l2, $emg_district, $password, $password_rep];
 
     for ($i = 0; $i < count($req_data); $i++) {
         if ($req_data[$i] == "") {
@@ -36,8 +38,12 @@ if (isset($_POST["user_submission"]))
             exit();
         }
     }
+    if ($password != $password_rep) {
+        header("Location: ../user_register.php?err=Password did not matched!");
+        exit();
+    }
 
-    header("Location: ../user_register.php?ok");
     register_user($data);
+    header("Location: ../user_register.php?ok=User Registered Successfully");
 }
 ?>

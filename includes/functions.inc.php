@@ -1,9 +1,9 @@
 <?php
 function register_user($data) {
     $json_path = "../config/credentials.json";
-    require "./db.php";
+    require "../db.php";
     
-    if (count($data) == 21) {
+    if (count($data) == 23) {
         $full_name = $data[0];
         $first_name = $data[1];
         $last_name = $data[2];
@@ -25,7 +25,41 @@ function register_user($data) {
         $med_allergy = $data[18];
         $med_surgery = $data[19];
         $med_chronic = $data[20];
-    $ref = $database->getReference('app/MedSync/' . "/password")->set($password);   
+        $password = $data[21];
+        $password_rep = $data[22];
+        $uid = get_UID();
+
+        
+        // Create an associative array with the data
+        $user_data = array(
+            'full_name' => $full_name,
+            'first_name' => $first_name,
+            'last_name' => $last_name,
+            'gender' => $gender,
+            'dob' => $dob,
+            'nic' => $nic,
+            'blood' => $blood,
+            'address_l1' => $address_l1,
+            'address_l2' => $address_l2,
+            'district' => $district,
+            'phone' => $phone,
+            'email' => $email,
+            'emg_name' => $emg_name,
+            'rel_name' => $rel_name,
+            'emg_phone' => $emg_phone,
+            'emg_address_l1' => $emg_address_l1,
+            'emg_address_l2' => $emg_address_l2,
+            'emg_district' => $emg_district,
+            'med_allergy' => $med_allergy,
+            'med_surgery' => $med_surgery,
+            'med_chronic' => $med_chronic,
+            'uid' => $uid,
+            'password' => $password
+        );
+       
+        
+    $ref = $database->getReference('app/MedSync/users/' . $uid)->set($user_data);
+     
 }
 }
 
@@ -37,4 +71,17 @@ function generateUID() {
         $uid .= $characters[mt_rand(0, $max)];
     }
     return $uid;
+}
+function get_UID() {
+    $json_path = "../config/credentials.json";
+    require "../db.php";
+
+    $uid = generateUID();
+    $data = $database->getReference('app/MedSync/users/' . $uid . '/user_id' )->getValue();
+    if ($data) {
+        get_UID();
+    }
+    else {
+        return $uid;
+    }
 }
