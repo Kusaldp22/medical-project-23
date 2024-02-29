@@ -25,7 +25,7 @@
                     <a href="#" class="nav-link">Help & Support</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Reviews</a>
+                    <a href="user_register.php" class="nav-link">Registrations</a>
                 </li>
             </ul>
             <div class="search-bar">

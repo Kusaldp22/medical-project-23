@@ -17,7 +17,7 @@
     <!-- header -->
 
     <?php
-      include_once "site_parts/main_header.php";
+      include_once "site_parts/web_main_header.php";
       ?>
     <header class="header bg-green">
 
