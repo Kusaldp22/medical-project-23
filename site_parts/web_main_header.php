@@ -1,6 +1,6 @@
 <nav class="navbar bg-green nav-sub">
     <div class="container flex">
-        <a href="index.html" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
             <img style="width: 80px;" src="images/_logo_.png" alt="site logo" />
         </a>
         <button type="button" class="navbar-show-btn">
