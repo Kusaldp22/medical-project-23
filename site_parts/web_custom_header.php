@@ -7,8 +7,21 @@
     <title>User Register</title>
     <link rel="stylesheet" href="./css/forms.css" />
     <link rel="stylesheet" href="./css/colors.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/fonts.css" />
 
 
     <style>
@@ -42,8 +55,6 @@
         width: 100%;
     }
 
-    .nav-ul-c {}
-
     .nav-li-c {
         margin: 0 8px;
     }
@@ -53,39 +64,8 @@
 
 
 <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: var(--dark) !important;">
-        <div class="container-fluid" style="display:flex; align-items: center; justify-content: space-between;">
-            <a class="navbar-brand text-white" href="#">MedSync</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="index.php" class="nav-link text-white">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="our_process.php" class="nav-link text-white">Our Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">Help & Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="user_register.php" class="nav-link text-white">Registrations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="user_login.php" class="nav-link text-white">Log In</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--dark) !important;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary) !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo_.png" alt="Logo" style="width: 70px; height: 70px;" />
@@ -95,24 +75,24 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav nav-ul-c">
+                <ul class="navbar-nav">
                     <li class="nav-item nav-li-c">
-                        <a href="index.php" class="nav-link text-white">Home</a>
+                        <a href="index.php" class="nav-link text-color-main nav-texts">Home</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="#" class="nav-link text-white">About Us</a>
+                        <a href="#" class="nav-link text-color-main nav-texts">About Us</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="our_process.php" class="nav-link text-white">Our Process</a>
+                        <a href="our_process.php" class="nav-link text-color-main nav-texts">Our Process</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="#" class="nav-link text-white">Help & Support</a>
+                        <a href="#" class="nav-link text-color-main nav-texts">Help & Support</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="user_register.php" class="nav-link text-white">Registrations</a>
+                        <a href="user_register.php" class="nav-link text-color-main nav-texts">Registrations</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="user_login.php" class="nav-link text-white">Log In</a>
+                        <a href="user_login.php" class="nav-link text-color-main nav-texts">Log In</a>
                     </li>
                 </ul>
             </div>
