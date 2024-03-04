@@ -105,31 +105,7 @@ if (isset($_GET["ok"])) {
                     <select style="border: 2px solid rgb(208, 161, 255)" class="form-select form-select-sm"
                         id="validationCustom04" required name="district">
                         <!-- add the districts -->
-                        <option value="Colombo" selected>Colombo</option>
-                        <option value="Gampaha">Gampaha</option>
-                        <option value="Kaluthara">Kaluthara</option>
-                        <option value="Kandy">Kandy</option>
-                        <option value="Matale">Matale</option>
-                        <option value="Nuwara Eliya">Nuwara Eliya</option>
-                        <option value="Galle">Galle</option>
-                        <option value="Matara">Matara</option>
-                        <option value="Hambantota">Hambantota</option>
-                        <option value="Jaffna">Jaffna</option>
-                        <option value="Kilinochchi">Kilinochchi</option>
-                        <option value="Mannar">Mannar</option>
-                        <option value="Vavuniya">Vavuniya</option>
-                        <option value="Mullaitivu">Mullaitivu</option>
-                        <option value="Batticaloa">Batticaloa</option>
-                        <option value="Ampara">Ampara</option>
-                        <option value="Trincomalee">Trincomalee</option>
-                        <option value="Kurunegala">Kurunegala</option>
-                        <option value="Puttalam">Puttalam</option>
-                        <option value="Anuradhapura">Anuradhapura</option>
-                        <option value="Polonnaruwa">Polonnaruwa</option>
-                        <option value="Badulla">Badulla</option>
-                        <option value="Monaragala">Monaragala</option>
-                        <option value="Ratnapura">Ratnapura</option>
-                        <option value="Kegalle">Kegalle</option>
+                        <?=get_districts()?>
                     </select>
                 </div>
                 <div class="col-md-6">
@@ -187,30 +163,7 @@ if (isset($_GET["ok"])) {
                         id="validationCustom04" required name="emerg-district">
                         <!-- add the districts -->
                         <option value="Colombo" selected>Colombo</option>
-                        <option value="Gampaha">Gampaha</option>
-                        <option value="Kaluthara">Kaluthara</option>
-                        <option value="Kandy">Kandy</option>
-                        <option value="Matale">Matale</option>
-                        <option value="Nuwara Eliya">Nuwara Eliya</option>
-                        <option value="Galle">Galle</option>
-                        <option value="Matara">Matara</option>
-                        <option value="Hambantota">Hambantota</option>
-                        <option value="Jaffna">Jaffna</option>
-                        <option value="Kilinochchi">Kilinochchi</option>
-                        <option value="Mannar">Mannar</option>
-                        <option value="Vavuniya">Vavuniya</option>
-                        <option value="Mullaitivu">Mullaitivu</option>
-                        <option value="Batticaloa">Batticaloa</option>
-                        <option value="Ampara">Ampara</option>
-                        <option value="Trincomalee">Trincomalee</option>
-                        <option value="Kurunegala">Kurunegala</option>
-                        <option value="Puttalam">Puttalam</option>
-                        <option value="Anuradhapura">Anuradhapura</option>
-                        <option value="Polonnaruwa">Polonnaruwa</option>
-                        <option value="Badulla">Badulla</option>
-                        <option value="Monaragala">Monaragala</option>
-                        <option value="Ratnapura">Ratnapura</option>
-                        <option value="Kegalle">Kegalle</option>
+                        <?=get_districts()?>
                     </select>
                 </div>
             </div>
@@ -249,7 +202,7 @@ if (isset($_GET["ok"])) {
             <div class="from_div_content row g-3 needs-validation mt-4 mb-2">
                 <div class="col-12">
                     <button class="btn btn-primary form-control" type="submit" name="user_submission">
-                        Submit form
+                        Register
                     </button>
                 </div>
             </div>
