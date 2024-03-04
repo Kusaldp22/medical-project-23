@@ -1,7 +1,7 @@
 <?php
 include_once "./site_parts/web_custom_header.php";
 ?>
-<div class="form_header">
+<div class="form_header navbar-spacing">
 
     <h2 class="text-center mt-3">User Registration Forum</h2>
     <div class="alert alert-primary mb-4 mt-3 inside-content" role="alert">

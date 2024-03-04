@@ -65,8 +65,9 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary) !important;">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark"
+        style="background-color: var(--primary) !important; position:fixed; z-index: 99; width: 100%; height: var(--nav-height); top:0;">
+        <div class="container-fluid" style="background-color: var(--primary) !important;">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo_.png" alt="Logo" style="width: 70px; height: 70px;" />
             </a>

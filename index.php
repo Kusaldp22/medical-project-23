@@ -1,7 +1,7 @@
 <?php 
 include_once "site_parts/web_custom_header.php";
 ?>
-<section class="section-contents-main align-hero">
+<section class="section-contents-main align-hero navbar-spacing">
     <div class="top_left">
         <h1 class="barlow-semibold mb-3 mt-3">Sri Lanka's <span style="color: yellow;">#1</span> Health Care Partner
         </h1>
@@ -20,8 +20,59 @@ include_once "site_parts/web_custom_header.php";
     </div>
 </section>
 
-<section class="section-contents">
 
+<section class="section-contents mt-4">
+    <div class="about-content">
+        <div class="about-left">
+            <h2 class="mb-3">What We Are Do</h2>
+            <p class="">Welcome to MedSync, where we're transforming healthcare with our innovative QR
+                code-based Medical
+                Information Management System. Our mission is to streamline patient data, enhance healthcare access, and
+                revolutionize the healthcare experience.
+            </p>
+            <p class="">With QR code cards, we're making registration seamless,
+                providing quick access to vital information for healthcare providers. Suwa Sahana is not just a project;
+                it's our commitment to a healthier, more connected future. Join us on this journey!</p>
+        </div>
+        <div class="about-right">
+            <img src="./images/wawd.png" class="img-fluid" alt="...">
+        </div>
+    </div>
+</section>
+
+<section class="section-contents mt-3">
+    <div class="title_info text-center mb-5">
+        <h1>Explore Our Services</h1>
+        <p>Empowering Your Health Journey With QR Code technology</p>
+    </div>
+    <div class="service-contents">
+        <div class="service-box text-center">
+            <div class="service-img">
+                <img src="./images/service-1.jpg" class="img-fluid" alt="...">
+            </div>
+            <h4 class="mb-4 mt-5">Security & Privacy</h4>
+            <p>Our QR code card uses a super-strong lock called encryption to make sure only the right people, like your
+                healthcare providers, can open and read your medical info.</p>
+        </div>
+        <div class="service-box text-center">
+            <div class="service-img">
+                <img src="./images/service-2.png" class="img-fluid" alt="...">
+            </div>
+            <h4 class="mb-4 mt-5">Probability & Accessibility</h4>
+            <p>Our QR code card is designed to be small and light, just like your regular ID card. You can carry it in
+                your wallet or even on your phone – it's that simple!</p>
+        </div>
+        <div class="service-box text-center">
+            <div class="service-img">
+                <img src="./images/service-3.jpg" class="img-fluid" alt="...">
+            </div>
+            <h4 class="mb-4 mt-5">
+                Convenience In Access
+            </h4>
+            <p>Your QR code card is not just a card , it's a handy tool. Use it at government hospital clinics or
+                pharmacies to get quick access to your medical records.</p>
+        </div>
+    </div>
 
 </section>
 
