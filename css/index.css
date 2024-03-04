@@ -118,10 +118,17 @@ body {
   align-items: center;
 }
 .about-left {
-  width: calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50%);
+  border: 2px solid var(--primary);
+  height: 100%;
+  padding: 25px;
+  border-radius: 15px;
 }
 .about-right {
-  width: calc(50%);
+  width: calc(50% - 50px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,13 +136,17 @@ body {
 .about-right > img {
   width: 90%;
 }
+
 @media screen and (max-width: 800px) {
   .about-content {
     flex-direction: column;
   }
-  .about-left,
-  .about-right {
+  .about-left {
     width: 95%;
+  }
+  .about-right {
+    width: 60%;
+    margin-top: 15px;
   }
 }
 /* service section */
@@ -178,5 +189,90 @@ body {
   .service-box {
     /* height: 200px; */
     margin-bottom: 40px;
+  }
+}
+/* Sri lanka */
+
+.sl-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sl-left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.sl-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding: 20px; */
+}
+.text-dec-sl > h6 {
+  margin: 0;
+}
+.text-dec-sl {
+  padding: 15px;
+  border: 2px solid var(--primary);
+  margin: 10px 0px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.text-dec-sl > img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 750px) {
+  .sl-content {
+    flex-direction: column;
+  }
+  .sl-right,
+  .sl-left {
+    width: 95%;
+  }
+}
+
+/* imgs */
+
+.section-img-contents {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--light);
+  display: flex;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.img-left {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.img-right {
+  width: 50%;
+}
+.img-right > img {
+  height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .section-img-contents {
+    flex-direction: column;
+  }
+  .img-right,
+  .img-left {
+    width: 100%;
   }
 }
