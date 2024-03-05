@@ -90,10 +90,10 @@
                         <a href="#" class="nav-link text-color-main nav-texts">Help & Support</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="user_register.php" class="nav-link text-color-main nav-texts">Registrations</a>
+                        <a href="register.php" class="nav-link text-color-main nav-texts">Registrations</a>
                     </li>
                     <li class="nav-item nav-li-c">
-                        <a href="user_login.php" class="nav-link text-color-main nav-texts">Log In</a>
+                        <a href="login.php" class="nav-link text-color-main nav-texts">Log In</a>
                     </li>
                 </ul>
             </div>

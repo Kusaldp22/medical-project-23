@@ -162,7 +162,6 @@ if (isset($_GET["ok"])) {
                     <select style="border: 2px solid rgb(208, 161, 255)" class="form-select form-select-sm"
                         id="validationCustom04" required name="emerg-district">
                         <!-- add the districts -->
-                        <option value="Colombo" selected>Colombo</option>
                         <?=get_districts()?>
                     </select>
                 </div>
