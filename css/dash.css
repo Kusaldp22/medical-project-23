@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+input[type="text"],
+input[type="password"],
+select,
+input[type="date"] {
+  border: 2px solid rgb(208, 161, 255);
+}
+
+.c-nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  background-color: rgb(227, 207, 255) !important;
+}
+.menu-text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 40px;
+}
+.menu-text:hover {
+  color: rgb(255, 255, 255);
+}
+.defalt-container-style {
+  width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.t-text {
+  font-size: 0.9rem;
+}
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login-container button {
+  width: 100%;
+}
+.card-animation {
+  transition: box-shadow 0.3s;
+}
+.card-animation:hover {
+  box-shadow: 0 0 20px rgba(60, 0, 98, 0.5);
+}

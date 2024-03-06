@@ -1,4 +1,7 @@
 <?php
+
+use Kreait\Firebase\Factory;
+
 function register_user($data) {
     $json_path = "../config/credentials.json";
     require "../db.php";
@@ -83,5 +86,29 @@ function get_UID() {
     }
     else {
         return $uid;
+    }
+}
+
+function check_login($username, $password) {
+    $json_path = "../config/credentials.json";
+    require "../db.php";
+
+    $data = $database->getReference('app/MedSync/users/' . $username)->getValue();
+    if ($data) {
+        if (($data["uid"] == $username) && ($data["password"] == $password)) {
+            unset($array['password']);
+            session_start();
+            $_SESSION["user"] = $data;
+            header("Location: ../dashboard.php");
+            exit();
+        } 
+        else {
+            header("Location: ../login.php?err=Incorrect Username or Password");
+            exit();
+        }
+    }
+    else {
+        header("Location: ../login.php?err=Incorrect Username or Password");
+        exit();
     }
 }
