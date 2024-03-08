@@ -1,7 +1,9 @@
 :root {
   --primary: #007bff;
   --secondary: #ffffff;
-  --light: #c7e3ff;
+  --third: #00a5ff;
   --dark: #004e9a;
+  --light: #c7e3ff;
   --nav-height: 86px;
+  
 }

@@ -78,6 +78,7 @@ body {
 .top_left > h1 {
   /* color: var(--primary); */
   color: white;
+  
 }
 .top_left > p {
   color: white;
@@ -122,10 +123,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: calc(50%);
-  border: 2px solid var(--primary);
+  border: 2px solid var(--third);
   height: 100%;
   padding: 25px;
   border-radius: 15px;
+  font-weight: 600;
+  
+  
 }
 .about-right {
   width: calc(50% - 50px);
@@ -275,4 +279,53 @@ body {
   .img-left {
     width: 100%;
   }
+}
+
+/* process page */
+
+.barlow-semibold-process{
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3.4rem;
+  padding-bottom: 2rem;
+  
+  
+  
+}
+.top-img-process{
+  width: calc(65vh);
+  z-index: 9;
+  position: absolute;
+  bottom: 0;
+  width: 30%;
+}
+
+.top-circle-process{
+  position: absolute;
+  --circle-width: calc(70vh - 50px);
+  width: var(--circle-width);
+  height: var(--circle-width);
+  border-radius: 50%;
+  background-color: var(--primary);
+  --circle-width: calc(30vw);
+  width: var(--circle-width);
+  height: var(--circle-width);
+  
+  
+}
+
+.about-left h2{
+  color: var(--third);
+  font-weight: 600;
+}
+
+.title_info h1{
+  color: gold;
+}
+
+.about-left .para{
+  text-align: left;
+  padding: 0 1em;
+  
 }
